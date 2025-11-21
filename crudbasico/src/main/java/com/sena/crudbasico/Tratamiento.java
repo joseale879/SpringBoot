@@ -17,6 +17,10 @@ public class Tratamiento {
     @JoinColumn(name = "IdPaciente", nullable = false)
     private Paciente paciente;
 
+        @ManyToOne
+    @JoinColumn(name = "id_enfermera", nullable = false)
+    private Enfermera enfermera;
+    
     @Column(name = "Descripcion", nullable = false, length = 200)
     private String descripcion;
 
